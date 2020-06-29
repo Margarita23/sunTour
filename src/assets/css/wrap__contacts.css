@@ -20,6 +20,7 @@
 }
 
 .wrap__contacts--big .contacts__phone {
+    color: white;
     font-size: 26px;
     margin-right: 0px;
     margin-bottom: 20px;
@@ -109,6 +110,18 @@
     .social-container {
         width: 30px;
         height: 30px;
+    }
+}
+
+@media screen and (max-width : 600px) {
+
+    .contacts__phone {
+        font-size: 16px;
+        margin-right: 5px;
+    }
+
+    .contacts__back-call {
+        margin-right: 5px;
     }
 }
 

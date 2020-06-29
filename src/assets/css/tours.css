@@ -289,6 +289,12 @@
     .info__zag {
         font-size: 25px;
     }
+
+    .preview__info {
+        left: 23px;
+        width: 200px;
+        height: 200px;
+    }
 }
 
 @media (max-width : 500px) {
@@ -326,7 +332,7 @@
     .average__rating {
         font-size: 20px;
         margin-right: 20px;
-    } 
+    }
 }
 
 @media screen and (max-width : 480px) {
@@ -398,10 +404,26 @@
 
 @media screen and (max-width : 320px) {
 
+    /* .preview__info {
+        display: none;
+        background-color: rgba(255, 255, 50, 0.7);
+        border-radius: 50%;
+        position: absolute;
+        padding: 45px;
+        bottom: 33px;
+        left: 33px;
+        width: 250px;
+        height: 250px;
+        font-family: Trebuchet MS;
+    } */
+
     .preview__info {
-        width: 100px;
-        height: 100px;
-        padding: 25px;
+        width: 90px;
+        height: 90px;
+        padding: 20px;
+
+        bottom: 33px;
+        left: 33px;
     }
 
     .preview__name {
