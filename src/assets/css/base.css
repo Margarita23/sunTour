@@ -1,0 +1,36 @@
+html, body {
+    margin: 0;
+    width: 100%;
+    min-width: 320px;
+    min-height: 100%;
+    font-family: "Open Sans", "Arial";
+    position: relative;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 0px;
+    padding: 0px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    padding: 0px;
+    margin: 0px;
+}
+
+ul {
+    padding: 0px;
+    margin: 0px;
+    list-style-position: inside;
+}
+
+ul li {
+    list-style: none;
+}

@@ -1,0 +1,30 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    justify-self: end;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid black;
+    padding: 16px 0px;
+    font-size: 12px;
+}
+
+.footer__desc {
+    display: flex;
+    align-self: center;
+}
+
+.link__company {
+    margin-left: 4px;
+    color: rgb(90, 200, 255);
+    border-bottom: 1px solid rgb(184, 231, 255);
+}
+
+@media (max-width : 800px) {
+    .footer .container {
+        margin: 0px 20px;
+    }
+}

@@ -1,0 +1,403 @@
+.tours__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 65px;
+}
+
+.tour__item--main .preview__image {
+    width: 100%;
+}
+
+.tour__item--main .info__key-container {
+    justify-content: flex-start;
+    align-content: center;
+
+}
+
+.tour__item.tour__item--main {
+    width: 100%;
+    flex: 1;
+}
+
+.tour__item--main .info__zag-desc {
+    display: none;
+}
+
+.info__zag-desc {
+    font-family: Arial;
+    font-size: 14px;
+    color: #000000;
+    margin-top: 10px;
+}
+
+.preview__image {
+    width: 100%;
+}
+
+.preview__image-container {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.preview__info {
+    display: none;
+    background-color: rgba(255, 255, 50, 0.7);
+    border-radius: 50%;
+    position: absolute;
+    padding: 45px;
+    bottom: 33px;
+    left: 33px;
+    width: 250px;
+    height: 250px;
+    font-family: Trebuchet MS;
+}
+
+.preview__name {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 5px;
+    line-height: 29px;
+}
+
+
+.preview__code {
+    font-size: 14px;
+    text-align: center;
+    line-height: 21px;
+}
+
+
+.code {
+    font-size: 24px;
+    color: white;
+    background-color: black;
+}
+
+.preview__svg-triangle {
+    display: none;
+    position: absolute;
+    width: 422px;
+    height: 65px;
+    right: 0;
+    bottom: 0;
+}
+
+.info__key-container {
+    font-family: Trebuchet MS;
+    font-size: 35px;
+    position: relative;
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+
+.info__zag {
+    font-size: 35px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+    color: black;
+    margin-right: 20px;
+}
+
+.info__zag:hover {
+    color: #CB0000;
+    border-bottom: 1px solid rgba(203, 0, 0, 0.25);
+}
+
+.info__rating {
+    display: none;
+}
+
+.rating__list {
+    display: flex;
+    margin-right: 20px;
+}
+
+.rating__item {
+    margin-right: 3px;
+}
+
+.rating__item:last-child {
+    margin-right: 0px;
+}
+
+.rating-desc__list {
+    display: flex;
+}
+
+.rating-desc__item {
+    text-transform: uppercase;
+    font-family: Arial;
+    letter-spacing: 0.05em;
+    margin-right: 16px;
+}
+
+.rating-desc__item:last-child {
+    margin-right: 16px;
+}
+
+.rating-desc {
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.rating__value {
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 900;
+}
+
+.additional__banner {
+    display: none;
+    position: absolute;
+    right: 7%;
+    bottom: -24%;
+    width: 170px;
+}
+
+.banner__number {
+    font-family: Trebuchet MS;
+    font-size: 88px;
+    line-height: 102px;
+    letter-spacing: -0.05em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #777777;
+}
+
+.banner__text {
+    font-family: Arial;
+    font-size: 30px;
+    line-height: 31px;
+    text-align: center;
+    color: #000000;
+}
+
+.review-container {
+    display: none;
+    align-items: center;
+    margin-bottom: 55px;
+}
+
+.review__main {
+    width: 105px;
+    margin-right: 35px;
+}
+
+.reviews__link {
+    color: black;
+    font-weight: bold;
+}
+
+.average__rating {
+    font-family: Trebuchet MS;
+    font-size: 24px;
+    line-height: 52px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 52px;
+    height: 52px;
+    background: #00BFF3;
+    margin-right: 30px;
+}
+
+.old-price {
+    font-family: Trebuchet MS;
+    font-size: 20px;
+    text-align: center;
+    color: #777777;
+    vertical-align: middle;
+}
+
+.old-price__container {
+    display: none;
+    position: absolute;
+    right: 0;
+    bottom: -5px;
+}
+
+.price__line-through {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    border: 1px solid #CB0000;
+    transform: rotate(180deg);
+}
+
+@media (max-width : 1005px) {
+
+    .tour__item:nth-child(2) {
+        margin-right: 0px;
+    }
+
+    .tours__list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .additional__banner {
+        right: 12%;
+        bottom: -20%;
+        width: 120px;
+    }
+    
+    .banner__number {
+        font-size: 64px;
+        line-height: 64px;
+    }
+
+    .banner__text {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .info__zag {
+        font-size: 30px;
+        margin-right: 15px;
+    }
+
+    .info__price {
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media (max-width : 600px) {
+    .tours__list {
+        margin-bottom: 30px;
+    }
+
+    .info__zag {
+        font-size: 25px;
+    }
+}
+
+@media (max-width : 500px) {
+    .additional__banner {
+        bottom: -21%;
+        right: 19%;
+        width: 120px;
+    }
+
+    .tour__item--main .info__key-container {
+        flex-direction: column;
+    }
+
+    .tour__item:nth-child(2) {
+        margin-right: 0px;
+    }
+
+    .review__main {
+        font-size: 14px;
+        margin-right: 15px;
+    }
+
+    .rating-desc__item {
+        margin-right: 10px;
+    }
+    
+    .rating-desc {
+        margin-right: 8px;
+    }
+    
+    .rating-desc__item:last-child {
+        margin-right: 0px;
+    }
+
+    .average__rating {
+        font-size: 20px;
+        margin-right: 20px;
+    } 
+}
+
+@media screen and (max-width : 480px) {
+
+    .preview__info {
+        width: 150px;
+        height: 150px;
+        padding: 25px;
+    }
+    
+    .preview__name {
+        line-height: 15px;
+        font-size: 15px;
+    }
+
+    .preview__code {
+        font-size: 12px;
+        line-height: 12px;
+    }
+
+    .code {
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+    .additional__banner {
+        right: 30%;
+        bottom: -15%;
+        width: 100px;
+    }
+    
+    .banner__number {
+        font-size: 44px;
+        line-height: 44px;
+    }
+
+    .banner__text {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .info__key-container {
+        margin-bottom: 10px;
+    }
+
+    .review-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .review__main {
+        margin: 0px 0px 15px 0px;
+    }
+
+    .average__rating {
+        margin: 0px 0px 15px 0px;
+    }
+
+    .rating-desc__list {
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    .rating-desc__item {
+        margin: 0px;
+    }
+
+}
+
+@media screen and (max-width : 320px) {
+
+    .preview__info {
+        width: 100px;
+        height: 100px;
+        padding: 25px;
+    }
+
+    .preview__name {
+        line-height: 10px;
+        font-size: 12px;
+    }
+
+    .preview__code {
+        font-size: 10px;
+        line-height: 10px;
+    }
+
+    .code {
+        font-size: 12px;
+        line-height: 12px;
+    }
+}
