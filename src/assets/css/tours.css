@@ -29,7 +29,7 @@
 
 .tour__item.tour__item--main {
     width: 100%;
-    flex: 1;
+    /* flex: 1; */
 }
 
 .tour__item--main .info__zag-desc {
@@ -43,9 +43,6 @@
     margin-top: 10px;
 }
 
-.tour__item--main {
-    width: 100%;
-}
 
 .tour__item {
     width: 48%;
