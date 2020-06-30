@@ -7,12 +7,24 @@
 
 .tour__item--main .preview__image {
     width: 100%;
+    display: block;
 }
 
 .tour__item--main .info__key-container {
     justify-content: flex-start;
     align-content: center;
+}
 
+.tour__item--main .additional__banner, .tour__item--main .preview__svg-triangle, .tour__item--main .info__rating, .tour__item--main .preview__info  {
+    display: block;
+}
+
+.tour__item--main .preview__info {
+    display: block;
+}
+
+.tour__item--main .review-container {
+    display: flex;
 }
 
 .tour__item.tour__item--main {
@@ -31,13 +43,26 @@
     margin-top: 10px;
 }
 
+.tour__item--main {
+    width: 100%;
+}
+
+.tour__item {
+    width: 48%;
+}
+
 .preview__image {
     width: 100%;
+}
+
+.tour__item--main .preview__image-container, .tour__item--main .preview__image {
+    max-height: 555px;
 }
 
 .preview__image-container {
     position: relative;
     margin-bottom: 30px;
+    max-height: 280px;
 }
 
 .preview__info {
@@ -60,13 +85,11 @@
     line-height: 29px;
 }
 
-
 .preview__code {
     font-size: 14px;
     text-align: center;
     line-height: 21px;
 }
-
 
 .code {
     font-size: 24px;
@@ -225,7 +248,6 @@
 }
 
 @media (max-width : 1005px) {
-
     .tour__item:nth-child(2) {
         margin-right: 0px;
     }
@@ -277,7 +299,7 @@
 
     .banner__text {
         font-size: 14px;
-    line-height: 15px;
+        line-height: 15px;
     }
 }
 
@@ -294,6 +316,10 @@
         left: 23px;
         width: 200px;
         height: 200px;
+    }
+
+    .tour__item {
+        width: 100%;
     }
 }
 
@@ -336,7 +362,6 @@
 }
 
 @media screen and (max-width : 480px) {
-
     .preview__info {
         width: 150px;
         height: 150px;
@@ -403,19 +428,6 @@
 }
 
 @media screen and (max-width : 320px) {
-
-    /* .preview__info {
-        display: none;
-        background-color: rgba(255, 255, 50, 0.7);
-        border-radius: 50%;
-        position: absolute;
-        padding: 45px;
-        bottom: 33px;
-        left: 33px;
-        width: 250px;
-        height: 250px;
-        font-family: Trebuchet MS;
-    } */
 
     .preview__info {
         width: 90px;

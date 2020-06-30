@@ -1,5 +1,3 @@
-console.log("hell");
-
 switchingTours();
 showOldPrice();
 showLittleContacts();
@@ -8,13 +6,40 @@ showLittleContacts();
 //---functions
 
 function switchingTours() {
+    let tourList = document.getElementsByClassName("tours__list")[0];
     let mainEl = document.getElementsByClassName("tour__item--main")[0];
-    mainEl.getElementsByClassName("preview__info")[0].style = "display: block;";
-    mainEl.getElementsByClassName("additional__banner")[0].style = "display: block;";
-    mainEl.getElementsByClassName("preview__svg-triangle")[0].style = "display: block;";
-    mainEl.getElementsByClassName("review-container")[0].style = "display: flex;";
-    mainEl.getElementsByClassName("info__rating")[0].style = "display: block";
-}
+
+    let tourItemsArray = document.getElementsByClassName("tour__item");
+
+    tourList.addEventListener('click', function(event) {
+        event.preventDefault();
+        let target = event.target;
+        
+        if(target.className == "info__zag"){
+            let posTarget = 0;
+
+            for(let i=0; i<tourItemsArray.length; i++){
+                if(tourItemsArray[i].className == "tour__item tour__item--main") {
+                    tourItemsArray[i].className = "tour__item";
+                }
+            }
+            
+            event.path[5].className = "tour__item tour__item--main";
+
+            for (i = 0; i < tourItemsArray.length; i++) {
+                if(tourItemsArray[i].className == "tour__item tour__item--main") {
+                    posTarget = i;
+                }
+            }
+
+            let bufTourMain = tourItemsArray[posTarget];
+
+            tourList.insertBefore(tourItemsArray[posTarget],tourList.firstChild);
+        }
+
+    });
+
+};
 
 function showOldPrice() {
     let oldPriceContainer = document.getElementsByClassName("old-price__container");
@@ -34,12 +59,9 @@ function showLittleContacts() {
         if(contactsBig.style.display === "flex"){
             contactsBig.style = "display: none;";
             contacts.style = "box-shadow: none";
-            console.log("click block");
         } else{
             contactsBig.style = "display: flex;";
             contacts.style = "box-shadow: 0px 0px 0px 5px rgba(255,255,255,0.4);";
-            console.log("click none");
         }
-
     });
 }
